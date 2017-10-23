@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+<head>
+    <title>second</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index2.css">
+    <script src="index2.js" type="text/javascript"></script>
+</head>
+<body style=" background-color: #DBE2EC;">
+
+    <div class="flex-container">
+        <input type="button" id="btn1" style="display: none; position: absolute; left: 0; top:0;" onclick="expandits('block1','btn1')" value="Open"></input>
+        <input type="button" id="btn2" style="display: none; position: absolute; left: 0; top:0;" onclick="expandits('block2','btn2')" value="Open"></input>
+        <div class="flex-item" id="block1">
+        <div class="slide" >
+                <input type="radio" name="slider2" id="slider2_1" checked="checked">
+                <label for="slider2_1"></label>
+            <div style="text-align: left"><span class="span1" >MARK MANSON</span>
+                <span class="span2">THE<br>DARK SIDE<br>OF THE<br>DIGITAL<br>NOMAD</span> <img src="man-person.jpg"></div>
+                <label for="slider2_2"></label>
+
+                <input type="radio" name="slider2" id="slider2_2">
+                <label for="slider2_2"></label>
+                <div><p>Пример №2.</p> <img src="2.jpg"></div>
+                <label for="slider2_3"></label>
+
+                <input type="radio" name="slider2" id="slider2_3">
+                <label for="slider2_3"></label>
+                <div><p>Пример №3.</p> <img src="3.jpg"></div>
+            </div>
+            <button class="ss" onclick="addComment('blcComment')"><img src="comment-white-oval-bubble.png"></button>
+            <input type="button" id="button1" class="close" onclick="expandits('block1','btn1')" value="Close"></input>
+        </div>
+        <div class="flex-item" id="block2">
+            <div class="slide">
+
+            <input type="radio" name="slider1" id="slider1_1" checked="checked">
+            <label for="slider1_1"></label>
+            <div style="overflow: auto;height: 95%">
+                <h6 style="color: black; font-size: 90%; text-shadow: none;">
+                    <span>T</span>he following is the original piece I wrote for CNN last year entrepreneurs, also known as "digital
+                    nomads." Sinse the whole "Work Online, Travel the World and Live the Dream" angle had been done to
+                    death in a million places, I decided to go the other direction and show the dark side of being a
+                    digital nomad - the challenges one faces, the emotional pitfalls, the social sacrifices.
+                    <br><br><br>
+                    Predictably, CNN hated it the editors hacked it to pieces and asked me to rewrite sections to make
+                    it less gloomy. But I was always fond of the original, so I'm posting it here unabridged.
+                </h6>
+            </div>
+            <label for="slider1_2"></label>
+            <input type="radio" name="slider1" id="slider1_2">
+            <label for="slider1_2"></label>
+            <div>
+                <p style="color: black; font-size: 90%; text-shadow: none;">
+                    <span>h</span>fsjdhfksd fksdf ksjdfh kjdshfkl;ak; ppp dasd
+                    <br><br><br>
+                    Predictably, CNN hated it the editors hacked it to pieces and asked me to rewrite sections to make
+                    it less gloomy. But I was always fond of the original, so I'm posting it here unabridged.
+                </p>
+            </div>
+            <label for="slider1_3"></label>
+            <input type="radio" name="slider1" id="slider1_3">
+            <label for="slider1_3"></label>
+            <div>
+                <p style="color: black; font-size: 90%; text-shadow: none;">
+                    <span>a</span> dsa daskj dk asd cxljxljjc l sldpj kkclzx cl hjkd ckjlzx clxjgkl dcd klscdlskd s cds ckl klcdkc lsc dls cd kls c sld
+                </p>
+            </div>
+                <button class="ss" onclick="addComment('blcComment')"><img src="comment-white-oval-bubble.png"></button>
+                <button class="close" onclick="expandits('block2','btn2')">Close</button>
+                <!--<input type="button" class="close" onclick="expandit('block1')" value="Close"></input>-->
+
+        </div>
+        </div>
+        <div class="flex-item asd" >
+            <div class="block3">
+                COMMENTS
+            </div>
+            <div class="end" id="blcComment"></div>
+        </div>
+    </div>
+</body>
+</html>

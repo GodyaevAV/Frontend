@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    height:100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #888;
+    position: absolute;
+    text-align: center;
+
+}
+.slide  input {
+    display: none;
+}
+
+.slide  input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+
+    cursor: pointer;
+
+    z-index: 100;
+    position: relative;
+
+    margin-right: 4px;
+    top: 95%;
+
+    transition: background 0.8s ease-out 0s;
+}
+
+.slide  input + label:hover {
+    background: rgba(250, 250, 250, 0.8);
+}
+
+.slide  input:checked + label {
+    background: rgba(220, 220, 220, 0.8);
+}
+
+.slide  div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.slide  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+img {
+    width:100%;
+    height: 95%;
+    position: relative;
+    z-index: -1;
+}
+
+.slide  input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.slide  div  p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 3px #222;
+}
+
+
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    /*z-index: 1;*/
+    }
+
+.flex-item {
+    background-color: white;
+    width: 25%;
+    margin: calc((10%)/3);
+    height: 70%;
+    position: relative;
+    box-shadow: 0 0 5px 2px gray;
+    }
+
+p {
+    font-family: Arial, Helvetica, sans-serif; /* Гарнитура шрифта основного текста */
+    font-size: 80%; /* Размер шрифта */
+    color: black;
+    text-align: left;
+}
+h6:first-letter{
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 600%; /* Размер шрифта первого символа */
+}
+
+.close {
+    position: absolute;
+    width: 20%;
+    top: 96%;
+    left: 1%;
+    z-index: 20;
+    border: 0;
+    background-color: white;
+}
+
+.block3{
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 2%;
+    font-size: inherit;
+    text-align: center;
+}
+
+.ss{
+    position: absolute;
+    top: 95%;
+    left: 90%;
+    width: 10%;
+    height: 4.5%;
+    z-index: 20;
+    border: 0;
+    background-color: white;
+}
+
+.span1{
+    top:50%;
+    left: 10%;
+    color: white;
+    position: absolute;
+}
+
+.span2{
+    font-size: 190%;
+    top: 55%;
+    left: 10%;
+    color: white;
+    position: absolute;
+}
+
+.end{
+    position: absolute;
+    top: 10%;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+}
+@media (max-width: 720px) {
+    .flex-container{
+        flex-direction: column;
+        height: 200%;
+    }
+    .flex-item{
+        width: 70%;
+    }
+    .span2{
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    .flex-item {
+        width: 40%;
+        height: 70%;
+        position: relative;
+    }
+    .flex-container {
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+}
